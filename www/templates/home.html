@@ -1,0 +1,16 @@
+
+<ion-view title="Login">
+    <ion-content overflow-scroll="true" padding="true" scroll="false" class="has-header" style="background: url(img/home-background.jpg) no-repeat center;">
+        <form class="list" name="homeForm" novalidate>
+            <div style="background-color:white" class="location">
+                <h6> Position lat: {{lat}} / long: {{long}}</h6>
+            </div>  
+            <div class="spacer" style="height: 40px;"></div>
+            <div style="text-align:center;">
+                <button class="button button-positive icon-left ion-ios-world memoryadd" ng-disabled="homeForm.$invalid" ng-click="createMemory()" style="margin: 0 auto;">Add Memory</button>
+            </div>
+            
+            <h4 class="header" style="color:white; text-align:center"> {{error_msg}} </h4>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,22 @@
+/* Empty. Add your own CSS if you like */
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.scroll {
+    height: 100%;
+}
+
+.location {
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.memoryadd {
+    border-radius: 15px;
+}
