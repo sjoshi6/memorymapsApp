@@ -15,6 +15,12 @@ angular.module('app.routes', [])
       controller: 'homeCtrl',
     })
   
+    .state('addTextMemory', {
+      url: '/addTextMemory',
+      templateUrl: 'templates/addtextmemory.html',
+      controller: 'addMemoryCtrl'
+    })
+  
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/home');
 });
