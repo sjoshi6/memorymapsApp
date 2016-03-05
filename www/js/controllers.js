@@ -44,9 +44,9 @@ angular.module('app.controllers', [])
             
         $scope.saveTextMemory = function(){
             
-            alert($scope.lat)
-            alert($scope.long)
-            alert($scope.textmemory.message)
+//            alert($scope.lat)
+//            alert($scope.long)
+//            alert($scope.textmemory.message)
         }
     })
 });
