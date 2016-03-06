@@ -10,12 +10,12 @@
                     <h6 name="loc"> At: Lat: {{lat}}, Long: {{long}} </h6>
                 </ion-item>
                 <ion-item>
-                    <textarea name="memory" ng-model="textmemory.message" ng-minlength="5" class="textmemoryarea" rows="15" cols="10"></textarea>
+                    <textarea name="memory" ng-model="textmemory.message" ng-minlength="5" class="textmemoryarea" rows="7" cols="10"></textarea>
                 </ion-item>
             </ion-list>
-            <div class="spacer" style="height: 40px;"></div>
+            <div class="spacer" style="height: 20px;"></div>
             <div style="text-align:center;">
-                <button class="button button-positive icon-left ion-android-upload memoryadd" ng-disabled="textMemoryForm.$invalid" ng-click="saveTextMemory()">Save</button>
+                <button class="button button-positive icon-left ion-android-upload memorysave" ng-disabled="textMemoryForm.$invalid" ng-click="saveTextMemory()">Save</button>
             </div>
             <h4 class="header" style="color:white; text-align:center"> {{error_msg}} </h4>
             

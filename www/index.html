@@ -30,11 +30,19 @@
   <body ng-app="app" animation="slide-left-right-ios7">
   <div>
     <div>
-        <ion-nav-bar class="bar-dark">
+        <ion-nav-bar class="bar-positive">
             <ion-nav-back-button class="button-icon icon ion-ios-arrow-back">Back</ion-nav-back-button>
         </ion-nav-bar>
         <ion-nav-view></ion-nav-view>
         <ion-footer-bar align-title="left" class="bar-dark">
+            <div class="bar bar-footer bar-light" ng-controller="mainCtrl">
+                <button class="button button-light footer-btn pull-left" ng-click="home()">
+                    <span class="icon ion-ios-home-outline">Home</span>
+                </button>
+                <button class="button button-light footer-btn pull-right" ng-click="nearby()">
+                    <span class="icon ion-ios-navigate-outline">Near By</span>
+                </button>
+            </div>
 
         </ion-footer-bar>
     </div>

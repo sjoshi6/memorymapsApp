@@ -21,6 +21,12 @@ angular.module('app.routes', [])
       controller: 'addMemoryCtrl'
     })
   
+    .state('nearby', {
+      url: '/nearby',
+      templateUrl: 'templates/nearby.html',
+      controller: 'nearybyCtrl'
+    })
+  
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/home');
 });

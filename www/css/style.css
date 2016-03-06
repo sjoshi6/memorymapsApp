@@ -24,11 +24,22 @@
     height: 50px;
 }
 
+.memorysave {
+    border-radius: 15px;
+    width: 110px;
+    height: 50px;
+}
+
 .textmemoryarea {
     width:100%;
     height: auto;
 }
 
 .footer {
-    height: 30px;
+    height: auto;
+}
+
+.footer-btn {
+    height: auto;
+    width: 150px;
 }

@@ -1,0 +1,10 @@
+<ion-view title="Memory Maps">
+    <ion-content overflow-scroll="true" padding="true" scroll="false" class="has-header" ng-controller="addMemoryCtrl">
+        <h4 class="header" style="text-align:center"> Nearby Events </h4>
+        <ion-list>
+          <ion-item ng-repeat="memory in memories">
+            {{memory.text}}
+          </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
