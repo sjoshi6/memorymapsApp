@@ -97,4 +97,25 @@ angular.module('app.controllers', [])
     
     $scope.memories = [{"text":"Test 1"}, {"text":"Test Test test"}, {"text":"I am here in 2336"}]
     
+    var res = $http({
+                
+            url: 'http://52.35.133.122:8080/v1/textmemories',
+            method: 'GET',
+            headers: {'Content-Type':'application/json'}
+        })
+
+        // On success
+        res.success(function(data, status, headers, config) {
+
+            $scope.memories=data.memories
+
+       });
+
+        // on Failure
+        res.error(function(data, status, headers, config) {
+
+            $scope.page_message = "Something went wrong. Try later"
+            $state.go('home')
+
+        });
 });
